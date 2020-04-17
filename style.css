@@ -1,0 +1,42 @@
+#Title{
+    color: Gold;
+   text-align: center;
+   text-shadow: -1px 1px 0 black,
+                1px 1px 0 black, 
+                1px -1px 0 black, 
+                -1px -1px 0 black; 
+    border-bottom: solid 1px darkgray;
+    margin-bottom: 0;
+}
+
+h2{
+   color: #94150c;
+   border-bottom: solid 2px #300f0d;
+}
+
+img{
+    display: block;
+}
+
+li{
+    list-style: none;
+}
+
+
+.flexContainer{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.myInterest{
+   width: 60%;
+   background-color: white; 
+   padding: 20px;
+}
+
+#movieList li{
+    list-style-type: lower-alpha;
+    
+}
+
