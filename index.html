@@ -2,7 +2,9 @@
 <html>
     <head> 
         <title>My Interests Webpage</title>
+        
         <link rel="stylesheet" type="text/css" href="style.css">
+       
     </head>
     <body> 
        
@@ -27,14 +29,34 @@
             
                 <img src="https://i.pinimg.com/originals/c9/2a/a5/c92aa59db37a0ea8a4bf46540a006572.jpg" alt="2018 Champions League Final" width="288px" height="198px">
 
+                <div id="jugglingVid">
+                    <h3>To see a video of me juggling a roll of toilet paper</h3>
+                    <input type="button" value="Click Here" onclick="showVid()"></input>
+                    <div class="toiletJuggle">
+                        
+                        <video width="400px" height="400px" controls>
+                            <source src="videos_pics/papervid.mp4" type="video/mp4">
+                        </video>
+                        <button id="close" onclick="closeVid()">Close Video</button>
+                    </div>
+                </div>
+               
+
+
+
                 <h2>Movies</h2>
-                <p>My top favorite movies are: </p>
+                <div id="movieDiv">
+                    <p>My top favorite movies are: </p>
+                   
                 <ol id="movieList"> 
                     <li>Avengers: Infinity War</li>
                     <li>Avengers: End Game</li>
                     <li>The Dark Knight</li>
                     <li>The Dark Knight Rises</li>
                 </ol>
+                <p>Click on any title to change the background!</p>
+                </div>
+                
 
                 <div>
                     <h2>Excersicing</h2>
@@ -51,6 +73,6 @@
         </div>
         
         
-      
+        <script src="funct.js"></script>
     </body>
 </html>

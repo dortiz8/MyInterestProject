@@ -14,12 +14,23 @@ h2{
    border-bottom: solid 2px #300f0d;
 }
 
+h3{
+   color: #377339;
+}
+
 img{
     display: block;
 }
 
 li{
     list-style: none;
+    
+}
+
+li:hover{
+    cursor: pointer;
+    font-size: larger ;
+    transition-duration: .6s;
 }
 
 
@@ -39,4 +50,41 @@ li{
     list-style-type: lower-alpha;
     
 }
+#movieDiv p{
+    font-weight: bold;
+}
 
+
+.toiletJuggle{
+    display: none;
+   margin-top: 10px;
+}
+
+.toiletJuggle button{
+    display: block;
+    margin: 10px 0px;
+    background-color:#e37b7b;
+}
+
+video{
+    border: solid 3px black;
+    
+}
+
+
+.infinity{
+    background-image: url("videos_pics/thanos.jpeg");
+    background-size: cover;
+}
+.endgame{
+    background-image: url("videos_pics/endgame.jpg");
+    background-size: cover;
+}
+.darknight{
+    background-image: url("videos_pics/joker.jpg");
+    background-size: cover;
+}
+.bane{
+    background-image: url("videos_pics/bane.jpg");
+    background-size: cover;
+}
