@@ -27,7 +27,7 @@ li{
     
 }
 
-li:hover{
+#movieList li:hover{
     cursor: pointer;
     font-size: larger ;
     transition-duration: .6s;
@@ -87,4 +87,28 @@ video{
 .bane{
     background-image: url("videos_pics/bane.jpg");
     background-size: cover;
+}
+
+#canvas1{
+    display: block;
+}
+#changeUpload canvas{
+    border: solid 5px black;
+    display: inline-flex;
+    margin-bottom: 10px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+#changeUpload input{
+    display: block; 
+    margin: 10px 0px; 
+}
+
+#greenScreen canvas{
+    border: solid 5px black;
+    display: inline-flex;
+    margin-bottom: 10px;
+   max-width: 400px;
+   max-height: 400px();
 }
