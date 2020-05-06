@@ -69,10 +69,54 @@
                         <tr><td>Lunges</td><td>20</td><td>4</td></tr>
                     </table>
                 </div>
+                <h2>Canvas Example</h2>
+                <div id="canvasDiv">
+                    <h3>Create a two-colored rectangle</h3>
+                    <ul>
+                        <li>Color 1: <input type="text" id="rectC1"></li>
+                        <li>Color 2: <input type="text" id="rectC2"></li>
+                    </ul>
+                    <button id="createRect">Create Rectangle</button>
+                    <canvas id="canvas1">
+
+                    </canvas>
+                    <p>Move the var to change colors</p>
+                    <input type="range" min="10" max="400" value="190" id="slider">
+                </div>
+                <div id="changeUpload">
+                    <h2>Upload and Display an Image</h2>
+                    <canvas id="can">
+
+                    </canvas>
+                    <!-- <canvas id="can2">
+                        
+                    </canvas> -->
+                    <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()">
+                    <input type="button" value="Make Grey Scale" onclick="makeGrey()">
+                    <!-- <p>Change apparence</p> -->
+                    <!-- <input type="range" min="10" max="255" value="10" id="uploadSlider" oninput="upslider()"> -->
+                </div>
+                <div id="greenScreen">
+                    <h2>Green Screen Match-up</h2>
+                    <canvas id="firstPic"> 
+
+                    </canvas>
+                    <canvas id="greenPic">
+
+                    </canvas>
+                    <p>Background:</p>
+                    <input type="file" multiple="false" accept="image/*" id="firstInput" onchange="firstLoad()">
+                    <p>Foreground:</p>
+                    <input type="file" multiple="false" accept="image/*" id="greenInput" onchange="secondLoad()">
+                    <input type="button" value="Create Composite" onclick="greenScreen()">
+                    <input type="button" value="Clear Canvas" onclick="ClearCanvas()">
+                </div>
+                
             </div>
         </div>
         
         
         <script src="funct.js"></script>
+        <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
     </body>
 </html>
